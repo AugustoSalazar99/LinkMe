@@ -1,15 +1,19 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-gray-100">
-    <h1 class="text-4xl font-bold text-blue-500">
-      ¡Tailwind CSS está funcionando!
-    </h1>
+  <div class="min-h-screen  flex items-center justify-center  bg-gradient-to-b from-gray-900 via-purple-700 to-purple-700">
+    <div class="w-full max-w-4xl p-5">
+      <linkme />
+    </div>
   </div>
 </template>
 
+
 <script>
+import linkme from "@/components/linkme.vue";
 export default {
   name: "App",
-  components: {},
+  components: {
+    linkme,
+  },
 };
 </script>
 
